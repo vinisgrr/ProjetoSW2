@@ -19,27 +19,46 @@
     </p>
  </div>
 
-
 <div class="container">
-
 
 <div class="row">
 
+        <div class="col-sm-4">
+
+            <h1 class="bg-primary text-white">Administração</h1>
+            <p class="text-primary">
+                ultilize esta opçao para realizar o cadastro
+                 de novos administradores, ou edita-los.
+            </p>
+        </div>
 
         <div class="col-sm-4">
-            <h1>Administração</h1>
+            <h1 class="bg-danger text-white">Categotias</h1>
+            <p class="text-danger">Ultile esta opçao para cadastrar as categoria
+                 dos produtos que serão vendidos on-line.
+                </p>
         </div>
 
         <div class="col-sm-4">
-            <h1>Categotias</h1>
+            <h1 class="bg-success text-white">Fornecedor</h1>
+            <p class="text-success">Ultilize esta informação para cadastrar os
+                 fornecedores dos produtos que serão vendidos on-line.
+                    </p>
         </div>
 
-        <div class="col-sm-4">
-            <h1>Fornecedor</h1>
         </div>
 
+        <div class= "row">
 
-        </div>
-        </div>
+            <div class="col-sm-6">
+                <h1>produtos</h1>
+            </div>
+
+            <div class="col-sm-6">
+                <h1>Vendas</h1>
+            </div>
+
+    </div>
+
 </body>
 </html>
