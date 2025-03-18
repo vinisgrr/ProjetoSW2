@@ -30,6 +30,9 @@
                 ultilize esta opçao para realizar o cadastro
                  de novos administradores, ou edita-los.
             </p>
+                 <p>
+                    <a href="administrador.php" class="btn btn-primary">Clque</a>
+                 </p>
         </div>
 
         <div class="col-sm-4">
@@ -37,12 +40,22 @@
             <p class="text-danger">Ultile esta opçao para cadastrar as categoria
                  dos produtos que serão vendidos on-line.
                 </p>
+
+                <p>
+                    <a href="categoria.php" class="btn btn-danger">Clque</a>
+                </p>
+
+
         </div>
 
         <div class="col-sm-4">
             <h1 class="bg-success text-white">Fornecedor</h1>
             <p class="text-success">Ultilize esta informação para cadastrar os
                  fornecedores dos produtos que serão vendidos on-line.
+                    </p>
+
+                    <p>
+                    <a href="fornecedor.php" class="btn btn-success">Clque</a>
                     </p>
         </div>
 
@@ -56,6 +69,11 @@
                     Ultilize esta opçao para cadastrar os produtos 
                     que serão vendidos no site.
                 </p>
+
+                <p>
+                    <a href="produto.php" class="btn btn-warning">Clque</a>
+                </p>
+
             </div>
 
             <div class="col-sm-6">
@@ -64,6 +82,9 @@
                     Ultilize esta opço para vizualizar as vendas 
                     realizadas pelos clientes
                 </p>
+
+            
+                
             </div>
 
     </div>
