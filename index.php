@@ -36,7 +36,7 @@
         </div>
 
         <div class="col-sm-4">
-            <h1 class="bg-danger text-white">Categotias</h1>
+            <h1 class="bg-danger text-white">Categorias</h1>
             <p class="text-danger">Ultile esta opçao para cadastrar as categoria
                  dos produtos que serão vendidos on-line.
                 </p>
@@ -64,7 +64,7 @@
         <div class= "row">
 
             <div class="col-sm-6">
-                <h1 class="bg-warning">produtos</h1>
+                <h1 class="bg-warning">Produtos</h1>
                 <p class="text-warning">
                     Ultilize esta opçao para cadastrar os produtos 
                     que serão vendidos no site.
