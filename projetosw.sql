@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 25-Mar-2025 às 13:48
+-- Tempo de geração: 07-Abr-2025 às 17:54
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `projetosw`
 --
-CREATE DATABASE IF NOT EXISTS `projetosw` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE `projetosw`;
 
 -- --------------------------------------------------------
 
@@ -36,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `administrador` (
   `login` varchar(200) NOT NULL,
   `senha` varchar(200) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `administrador`
@@ -45,7 +43,8 @@ CREATE TABLE IF NOT EXISTS `administrador` (
 INSERT INTO `administrador` (`codigo`, `nome`, `login`, `senha`) VALUES
 (1, 'Vinicius Silva Guerra', 'vinisgrr', ''),
 (2, 'Vinicius Silva Guerra', 'vinisgrr', ''),
-(3, 'vincius', 'viniguerra2008@gmail.com', 'b56e2a907f671744071b8c3a17a5328e');
+(3, 'vincius', 'viniguerra2008@gmail.com', 'b56e2a907f671744071b8c3a17a5328e'),
+(4, '', '', 'd41d8cd98f00b204e9800998ecf8427e');
 
 -- --------------------------------------------------------
 
@@ -58,7 +57,49 @@ CREATE TABLE IF NOT EXISTS `categoria` (
   `codigo` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
   PRIMARY KEY (`codigo`)
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Extraindo dados da tabela `categoria`
+--
+
+INSERT INTO `categoria` (`codigo`, `nome`) VALUES
+(1, 'vincius'),
+(2, 'limpeza'),
+(3, 'pano'),
+(4, 'pano'),
+(5, 'pano'),
+(6, 'pano'),
+(7, 'limpo'),
+(8, 'regewr'),
+(9, ''),
+(10, 'credito'),
+(11, 'credito'),
+(12, 'debito'),
+(13, 'debito'),
+(14, 'pix'),
+(15, 'pix');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `formapagamento`
+--
+
+DROP TABLE IF EXISTS `formapagamento`;
+CREATE TABLE IF NOT EXISTS `formapagamento` (
+  `codigo` int DEFAULT NULL,
+  `nome` varchar(100) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Extraindo dados da tabela `formapagamento`
+--
+
+INSERT INTO `formapagamento` (`codigo`, `nome`) VALUES
+(NULL, 'pix'),
+(NULL, 'pix'),
+(NULL, 'pix');
 
 -- --------------------------------------------------------
 
@@ -71,7 +112,15 @@ CREATE TABLE IF NOT EXISTS `fornecedor` (
   `codigo` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Extraindo dados da tabela `fornecedor`
+--
+
+INSERT INTO `fornecedor` (`codigo`, `nome`) VALUES
+(1, 'VINICIUS SILVA GUERRA'),
+(2, '');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
