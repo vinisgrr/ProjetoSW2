@@ -82,10 +82,13 @@
                     Ultilize esta opço para vizualizar as vendas 
                     realizadas pelos clientes
                 </p>
+                <p>
+                    <a href="vendas.php.php" class="btn btn-secondary">Clque</a>
+                    </p>
                 
 
                 <div class="col-sm-10">
-            <h1 class="bg-primary text-white">Forma de Pagamento</h1>
+            <h1 class="bg-success text-white">Forma de Pagamento</h1>
             <p class="text-success">ultilize essa opçao pra escolher sua forma de pagamento
                     </p>
 
