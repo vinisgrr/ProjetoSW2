@@ -125,9 +125,9 @@
         <!-- Coluna de Contato -->
         <div class="rodape-coluna">
             <h3>Contato</h3>
-            <p>Email: contato@minhaempresa.com</p>
-            <p>Telefone: (11) 98765-4321</p>
-            <p>Endereço: Rua Exemplo, 123 - Cidade, Estado</p>
+            <p>Email: viniguerra2008@gmail.com</p>
+            <p>Telefone: (19) 995740483</p>
+            <p>Endereço: Rua Julieta Lima Dias, 71 - Mococa, SP</p>
         </div>
 
         <!-- Coluna de Redes Sociais -->
@@ -135,7 +135,7 @@
             <h3>Redes Sociais</h3>
             <ul>
                 <li><a href="https://www.facebook.com/minhaempresa" target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com/minhaempresa" target="_blank">Instagram</a></li>
+                <li><a href="https://www.instagram.com/_vinisgrr/?next=%2F" target="_blank">Instagram</a></li>
                 <li><a href="https://www.linkedin.com/company/minhaempresa" target="_blank">LinkedIn</a></li>
                 <li><a href="https://twitter.com/minhaempresa" target="_blank">Twitter</a></li>
             </ul>

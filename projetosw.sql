@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 07-Abr-2025 às 17:54
+-- Tempo de geração: 08-Abr-2025 às 10:46
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -99,7 +99,16 @@ CREATE TABLE IF NOT EXISTS `formapagamento` (
 INSERT INTO `formapagamento` (`codigo`, `nome`) VALUES
 (NULL, 'pix'),
 (NULL, 'pix'),
-(NULL, 'pix');
+(NULL, 'pix'),
+(NULL, 'VINICIUS SILVA GUERRA'),
+(NULL, 'maiicon'),
+(NULL, 'maiicon'),
+(NULL, 'VINICIUS SILVA GUERRA'),
+(NULL, 'VINICIUS SILVA GUERRA'),
+(NULL, 'cartao_credito'),
+(NULL, 'pix'),
+(NULL, 'cartao_debito'),
+(NULL, 'debito');
 
 -- --------------------------------------------------------
 

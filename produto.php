@@ -42,9 +42,9 @@
                     </p>
 
                     <p>
-                        <input type="submit" value="Cadastrar" class="btn btn-warning">
+                        <input type="submit" value="Cadastrar" class="btn btn-success">
                         <input type="reset" value="Limpar" class="btn btn-warning">
-                        <a href="index.php" class="btn btn-warning">Voltar</a>
+                        <a href="index.php" class="btn btn-secondary">Voltar</a>
                     </p>
 
                 </form>
