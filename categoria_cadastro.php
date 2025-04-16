@@ -12,39 +12,36 @@
 <body>
     
     <div class="bg-primary text-white p-3 text-center">
-        <h1>Categorias</h1>
+
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 mx-auto mt-3 border border-danger">
+            <div class="col-sm-8 mx-auto mt-3 border border-primary">
                 <h3 class="text-center p-3">Confirmação do Cadastro</h3>
-
-
                 <div>
-                    <?php
+                    <?php 
+                    include "conexao.php";
                     
-                        include "conexao.php";
-                        $nome = $_REQUEST["nome"];
-            
-
-                        echo "Nome da Categoria: $nome <br>
-                                
-                                Nome: $nome <br>";
-
-                        $sql = "insert into categoria(nome)
-                                values (:nome)";
-
-                        
-                        $result = $conexao->prepare($sql);        
-                        $result->bindValue(":nome", $nome);
-                        $result->execute();
-
-                        echo "<p> O cadastro foi cadastrado com sucesso !</p>";
-                                
-                    ?>
-                </div>
+                    $nome= $_REQUEST["nome"];
                 
+            echo "Nome da Categoria: $nome <br>";
+         
+
+            $sql="insert into categoria(nome)
+            values(:nome)";
+
+            
+            $result= $conexao->prepare($sql);
+            $result->bindValue(":nome", $nome);
+            $result->execute();
+
+            echo "<p> A Categoria foi cadastrado com sucesso!</P>";
+
+         ?>
+          <a href="index.php" class="btn btn-primary">Voltar</a>
+</div>
+
             </div>
         </div>
     </div>

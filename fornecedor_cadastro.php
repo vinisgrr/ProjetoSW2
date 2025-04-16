@@ -12,40 +12,36 @@
 <body>
     
     <div class="bg-primary text-white p-3 text-center">
-        <h1>Cadastro de Fornecedor</h1>
+
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 mx-auto mt-3 border border-success">
-                <h3 class="text-center p-3">Nome do fornecedor</h3>
-
-
+            <div class="col-sm-8 mx-auto mt-3 border border-primary">
+                <h3 class="text-center p-3">Confirmação do Cadastro</h3>
                 <div>
-                    <?php
+                    <?php 
+                    include "conexao.php";
                     
-                        include "conexao.php";
-                        $nome = $_REQUEST["nome"];
-                       
-                        echo "Nome do Fornecedor: $nome <br>
-                               
-                                Nome: $nome <br>";
-
-                        $sql = "insert into fornecedor(nome)
-                                values (:nome)";
-
-                        
-                        $result = $conexao->prepare($sql);        
-                        $result->bindValue(":nome", $nome);
-                        $result->execute();
-                        
-                      
-
-                        echo "<p> O forncedor foi cadastrado com sucesso !</p>";
-                                
-                    ?>
-                </div>
+                    $nome= $_REQUEST["nome"];
                 
+            echo "Nome do Fornecedor: $nome <br>";
+         
+
+            $sql="insert into fornecedor(nome)
+            values(:nome)";
+
+            
+            $result= $conexao->prepare($sql);
+            $result->bindValue(":nome", $nome);
+            $result->execute();
+
+            echo "<p> O Fornecedor foi cadastrado com sucesso!</p>";
+
+         ?>
+          <a href="index.php" class="btn btn-primary">Voltar</a>
+</div>
+
             </div>
         </div>
     </div>

@@ -12,7 +12,7 @@
 <body>
     
     <div class="bg-warning text-white p-3 text-center">
-        <h1>Produtos</h1>
+        <h1> Cadastro de Produtos</h1>
     </div>
 
     <div class="container">
@@ -27,7 +27,7 @@
                     </p>
 
                     <p>
-                        Digite o preço do custo:<br>
+                        Digite o preço de custo:<br>
                         <input type="text" name="precocusto" class="form-control">
                     </p>
 
@@ -40,16 +40,16 @@
                         Digite a categoria:<br>
                         <input type="text" name="codcategoria" class="form-control">
                     </p>
-
                     <p>
                         Digite o fornecedor:<br>
                         <input type="text" name="codfornecedor" class="form-control">
                     </p>
 
                     <p>
-                        <input type="submit" value="Cadastrar" class="btn btn-success">
+                        <input type="submit" value="Cadastrar" class="btn btn-warning">
                         <input type="reset" value="Limpar" class="btn btn-warning">
-                        <a href="index.php" class="btn btn-secondary">Voltar</a>
+                        <a href="index.php
+                        " class="btn btn-warning">Voltar</a>
                     </p>
 
                 </form>

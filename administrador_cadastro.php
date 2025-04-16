@@ -12,42 +12,40 @@
 <body>
     
     <div class="bg-primary text-white p-3 text-center">
-        <h1>Cadastro de Administradores</h1>
+
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-sm-8 mx-auto mt-3 border border-primary">
                 <h3 class="text-center p-3">Confirmação do Cadastro</h3>
-
-
                 <div>
-                    <?php
+                    <?php 
+                    include "conexao.php";
                     
-                        include "conexao.php";
-                        $nome = $_REQUEST["nome"];
-                        $login = $_REQUEST["login"];
-                        $senha = md5($_REQUEST["senha"] );
+                    $nome= $_REQUEST["nome"];
+                    $login= $_REQUEST["login"];
+                    $senha= md5( $_REQUEST["senha"]);
+            echo "Nome do Administrador: $nome <br>
+            Login: $login <br>
+            Senha: $senha <br>";
 
-                        echo "Nome do Administrador: $nome <br>
-                                Login: $login <br>
-                                Senha: $senha <br>";
+            $sql="insert into administrador(nome, login, senha)
+            values(:nome, :login, :senha)";
 
-                        $sql = "insert into administrador(nome, login, senha)
-                                values (:nome, :login, :senha)";
+            
+            $result= $conexao->prepare($sql);
+            $result->bindValue(":nome", $nome);
+            $result->bindValue(":login", $login);
+            $result->bindValue(":senha", $senha);
+            $result->execute();
 
-                        
-                        $result = $conexao->prepare($sql);        
-                        $result->bindValue(":nome", $nome);
-                        $result->bindValue(":login", $login);
-                        $result->bindValue(":senha", $senha);
-                        $result->execute();
+            echo "<p> O administrador foi cadastrado com sucesso!</P>";
 
-                        echo "<p> O administrador foi cadastrado com sucesso !</p>";
-                                
-                    ?>
-                </div>
-                
+         ?>
+          <a href="index.php" class="btn btn-primary">Voltar</a>
+</div>
+
             </div>
         </div>
     </div>

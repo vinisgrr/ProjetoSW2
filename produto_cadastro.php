@@ -12,49 +12,47 @@
 <body>
     
     <div class="bg-primary text-white p-3 text-center">
-        <h1>Cadastro de Produtos</h1>
+
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-sm-8 mx-auto mt-3 border border-primary">
-                <h3 class="text-center p-3">Preencha os dados abaixo</h3>
-
-
+                <h3 class="text-center p-3">Confirmação do Cadastro</h3>
                 <div>
-                    <?php
+                    <?php 
+                    include "conexao.php";
                     
-                        include "conexao.php";
-                        $descricao = $_REQUEST["descricao"];
-                        $precoc = $_REQUEST["precocusto"];
-                        $precov = $_REQUEST["precovenda"];
-                        $categoria = $_REQUEST["codcategoria"];
-                        $fornecedor = $_REQUEST["codfornecedor"];
-                       
+                    $descricao= $_REQUEST["descricao"];
+                    $precocusto= $_REQUEST["precocusto"];
+                    $precovenda= $_REQUEST["precovenda"];
+                    $codcategoria= $_REQUEST["codcategoria"];
+                    $codfornecedor= $_REQUEST["codfornecedor"];
+                    
+            echo "Nome do Produto: $descricao <br>
+            Preço de Custo: $precocusto <br>
+            Preço de Venda: $precovenda <br>
+            Categoria: $codcategoria <br>
+            Fornecedor: $codfornecedor <br>";
 
-                        echo "Descricao: $descricao <br>
-                                Preco de custo: $precoc <br>
-                                Preco de venda: $precov <br>
-                                Categoria: $categoria <br>
-                                fornecedor: $fornecedor <br>";
+            $sql="insert into produto(descricao, precocusto, precovenda,codcategoria, codfornecedor )
+            values(:descricao, :precocusto, :precovenda, :codcategoria, :codfornecedor)";
 
-                        $sql = "insert into produto(descricao, precocusto, precovenda, codcategoria, codfornecedor)
-                                values (:descricao, :precocusto, :precovenda, :codcategoria, :codfornecedor)";
+            
+            $result= $conexao->prepare($sql);
+            $result->bindValue(":descricao", $descricao);
+            $result->bindValue(":precocusto", $precocusto);
+            $result->bindValue(":precovenda", $precovenda);
+            $result->bindValue(":codcategoria", $codcategoria);
+            $result->bindValue(":codfornecedor", $codfornecedor);
+            $result->execute();
 
-                        
-                        $result = $conexao->prepare($sql);        
-                        $result->bindValue(":descricao", $descricao);
-                        $result->bindValue(":precocusto", $precoc);
-                        $result->bindValue(":precovenda", $precov);
-                        $result->bindValue(":codcategoria", $categoria);
-                        $result->bindValue(":codfornecedor", $fornecedor);
-                        $result->execute();
+            echo "<p> O Produto foi cadastrado com sucesso!</p>";
 
-                        echo "<p> O produto foi cadastrado com sucesso !</p>";
-                                
-                    ?>
-                </div>
-                
+         ?>
+          <a href="index.php" class="btn btn-primary">Voltar</a>
+</div>
+
             </div>
         </div>
     </div>
