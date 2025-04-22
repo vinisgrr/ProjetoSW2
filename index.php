@@ -14,7 +14,7 @@
    <div class="container-fluid bg-dark text-white text-center p-5"> 
     <h1>Projeto SW2</h1>
     <p>
-        Elaborado por Luke
+        Elaborado por Vinícius Guerra
 </p>
 </div>
 
