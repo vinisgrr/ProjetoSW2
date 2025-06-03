@@ -17,7 +17,7 @@
     {
         //echo "Login realizado com sucesso !";
         session_start();
-        $SESSION("nome") = $linha("nome");
+        $_SESSION["nome"] = $linha["nome"];
 
         header ("location: index.php");
     }
