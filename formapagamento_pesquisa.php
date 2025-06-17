@@ -32,7 +32,7 @@
 
             <table class="table">
                 <tr>
-                  <th>Código</th> 
+                  <th>Codigo</th> 
                   <th>Nome</th>  
                 </tr>
 
@@ -50,7 +50,7 @@ while($linha=$result->fetch(PDO::FETCH_ASSOC))
         ?>
                 <tr>
 
-                <td><?=$linha["código"]?></td>
+                <td><?=$linha["codigo"]?></td>
                 <td><?=$linha["nome"]?></td>
                 </tr>
          <?php
