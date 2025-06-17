@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 10-Jun-2025 às 11:46
+-- Tempo de geração: 17-Jun-2025 às 11:20
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -65,8 +65,7 @@ CREATE TABLE IF NOT EXISTS `categoria` (
 
 INSERT INTO `categoria` (`codigo`, `nome`) VALUES
 (1, 'Comida'),
-(2, 'Gilbert'),
-(3, 'Luke');
+(2, 'Gilbert');
 
 -- --------------------------------------------------------
 
@@ -76,18 +75,17 @@ INSERT INTO `categoria` (`codigo`, `nome`) VALUES
 
 DROP TABLE IF EXISTS `formapagamento`;
 CREATE TABLE IF NOT EXISTS `formapagamento` (
-  `código` int NOT NULL AUTO_INCREMENT,
+  `codigo` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(200) NOT NULL,
-  PRIMARY KEY (`código`)
+  PRIMARY KEY (`codigo`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `formapagamento`
 --
 
-INSERT INTO `formapagamento` (`código`, `nome`) VALUES
-(1, 'pix'),
-(4, 'Luke');
+INSERT INTO `formapagamento` (`codigo`, `nome`) VALUES
+(1, 'pix');
 
 -- --------------------------------------------------------
 
@@ -110,9 +108,7 @@ INSERT INTO `fornecedor` (`codigo`, `nome`) VALUES
 (1, 'Gilbert'),
 (2, 'Gilbert'),
 (3, 'Gilbert'),
-(4, 'Gilbert'),
-(5, 'Luke'),
-(6, 'Bloberta');
+(4, 'Gilbert');
 
 -- --------------------------------------------------------
 
